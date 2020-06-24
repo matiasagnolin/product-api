@@ -21,7 +21,7 @@ public @Data class UserEntity implements Serializable {
     @Column(unique = true, length = 60)
     private String username;
 
-    @Column(name="enabled")
+    @Column(name="is_enabled")
     private boolean enabled;
 
     @ManyToMany(fetch = FetchType.LAZY)
